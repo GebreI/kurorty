@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"> </script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Six+Caps&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>      
+            <a href="index.html"><p class="logo">Najlepsze rejony narciarskie</p></a>
+            <nav>
+            <ul>
+                <a href="promocje.html"><li>Promocje</li></a>
+                <a href="oferta.html"><li>Oferty</li></a>
+                <a href="galeria.html"><li>Galeria</li></a>
+                <a href="kontakt.html"><li>Kontakt</li></a>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+            
+            <div class="data">
+                <p class="data_label">Dziś jest:</p>
+                <p id="dzis_jest"></p>
+                <p id="czas_obecny"></p>
+                <p class="data_label">Do wakacji zostało:</p>
+                <p id="do_konca"></p>
+            </div>
+            
+            <div class="animowany_baner">
+                <img id="animowany_slider" src="img/1.jpg">
+                <div id="slider_info"></div>
+            </div>
+            
+            <div class="informacje">
+                <p>Najlepsze rejony narciarskie!</p>
+                <p>- Najlepsze oferty</p>
+                <p>- Najlepsze ceny</p>
+                <p>- Najlepsza obsługa</p>
+                <p>Sprawdź nasze oferty już dziś!</p>
+                <br>
+                <a href="oferta.html" class="wiecej">Więcej >>></a>
+            </div>
+            
+        </main>
+        
+        <footer>
+            Wszelkie prawa zastrzeżone &copy; 2020 Gabriel Myśliwiec 3F JZSE
+        </footer>
+        
+        <script>
+            function baner(){
+                if(img>obrazki.length-1){
+                    img=0;
+                }
+                
+                document.getElementById("animowany_slider").src = obrazki[img];
+                document.getElementById("slider_info").innerHTML= info[img];
+                img++;
+            }
+            setInterval(baner,3000);
+        </script>
+        
+    </body>
+</html>

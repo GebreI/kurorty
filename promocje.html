@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Six+Caps&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>      
+            <a href="index.html"><p class="logo">Najlepsze rejony narciarskie</p></a>
+            <nav>
+            <ul>
+                <a href="promocje.html"><li>Promocje</li></a>
+                <a href="oferta.html"><li>Oferty</li></a>
+                <a href="galeria.html"><li>Galeria</li></a>
+                <a href="kontakt.html"><li>Kontakt</li></a>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+        
+            <p class="promo">Dzisiejsza promocja:</p>
+            
+            <div class="promocja">
+                <img id="promocja_img" alt=" " src="img/1.jpg">
+                <span id="promocja_info"></span>
+                <span id="random_cena"></span>
+            </div>
+            
+        </main>
+        
+        <footer>
+            Wszelkie prawa zastrzeżone &copy; 2020 Gabriel Myśliwiec 3F JZSE
+        </footer>
+        
+        <script>
+        
+            var randcena = parseInt(Math.random() * 2000 + 500);    
+            var x = Math.floor(Math.random() * 5);
+                
+            document.getElementById("promocja_img").src = obrazki[x];
+            document.getElementById("promocja_info").innerHTML = info[x];
+            document.getElementById("random_cena").innerHTML = randcena+" PLN";
+        
+        </script>
+        
+    </body>
+</html>

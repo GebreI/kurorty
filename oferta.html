@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Six+Caps&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>      
+            <a href="index.html"><p class="logo">Najlepsze rejony narciarskie</p></a>
+            <nav>
+            <ul>
+                <a href="promocje.html"><li>Promocje</li></a>
+                <a href="oferta.html"><li>Oferty</li></a>
+                <a href="galeria.html"><li>Galeria</li></a>
+                <a href="kontakt.html"><li>Kontakt</li></a>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+            
+            <div class="baner">
+                <img id="slider" src="img/1.jpg">
+                <div id="baner_info">Austria</div>
+                
+                <button type="button" onclick="prev()" class="prev">&#10094;</button>
+                <button type="button" onclick="next()" class="next">&#10095;</button>
+            </div>
+            
+        </main>
+        
+        <footer>
+            Wszelkie prawa zastrzeżone &copy; 2020 Gabriel Myśliwiec 3F JZSE
+        </footer>
+        
+        <script>
+            function prev(){
+                if(img == 0){
+                    img = obrazki.length;
+                }
+                img--;
+                document.getElementById("slider").src = obrazki[img];
+                document.getElementById("baner_info").innerHTML = info[img];
+            }
+
+            function next(){
+                img++;
+                if(img == obrazki.length){
+                    img=0;
+                }
+                document.getElementById("slider").src= obrazki[img];
+                document.getElementById("baner_info").innerHTML = info[img];
+            }
+        </script>
+        
+    </body>
+</html>

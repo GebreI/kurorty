@@ -1,0 +1,348 @@
+*
+{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+header
+{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border-bottom: dashed;  
+}
+
+header a
+{
+    text-decoration: none;
+}
+
+.logo
+{
+    width: 1000px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+nav
+{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul 
+{
+    list-style-type: none;
+}
+
+nav ul li
+{
+    font-family: 'Six Caps', sans-serif;
+    display: inline;
+    font-size: 40px;
+    
+}
+nav ul a 
+{
+    color: black;
+    padding: 5px 30px 5px 30px;
+}
+
+nav ul a:hover
+{
+    color: white;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    transition: 0.3s;
+}
+
+main
+{
+    width: 80%;
+    height: 1000px;
+}
+
+footer
+{
+    font-family: 'Amatic SC', cursive;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 30px;
+    text-shadow:
+       3px 3px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+}
+
+/*-------------GŁÓWNA------------------*/
+
+.animowany_baner{
+    
+}
+
+#animowany_slider{
+    border: dashed 5px;
+    max-width:40%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#slider_info{
+    width: 30%;
+    font-size: 40px;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    border: dashed 1px;
+}
+
+.informacje{
+    border: dashed 5px;
+    width: 20%;
+    height: 35%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+}
+
+.informacje a{
+    color: black
+}
+
+/*-------------DATA------------------*/
+
+div.data{
+    font-size: 30px;
+    margin: 1%;
+    padding: 1%;
+    float: right;
+    text-align: center;
+    border: dashed;
+    width: 10%;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.data_label{
+    font-weight: bold;
+}
+
+/*-------------OFERTA------------------*/
+
+.baner{
+    
+}
+
+#slider{
+    border: dashed 5px;
+    max-width:50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#baner_info{
+    width: 45%;
+    font-size: 70px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    border: dashed 5px;
+}
+.baner button{
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border: none;
+    background: none;
+    font-size: 50px;
+    background-color: white;
+    color: black;
+    border: dashed;
+    border-radius: 100%;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.next{
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev{
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*-------------PROMOCJE------------------*/
+
+p.promo{
+    border: dashed 1px;
+    width :20%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.3); 
+    font-size: 50px;
+    text-align: center;
+}
+
+#promocja_img{
+    border: dashed 5px;
+    max-width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#promocja_info{
+    width: 35%;
+    font-size: 70px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    border: dashed 5px;
+}
+
+#random_cena{
+    width: 30%;
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255,255,255, 0.5);
+    border-bottom: solid 5px black;;
+}
+
+/*-------------GALERIA------------------*/
+
+div.galeria {
+    margin: 3%;
+    border: dashed 5px;
+    float: left;
+    width: 25%;
+    background-color: rgba(255,255,255,0.2);
+}
+
+div.galeria:hover {
+    border: dotted 5px;
+}
+
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*-------------KONTAKT------------------*/
+
+.form{
+    border: dashed 1px;
+    width :20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.5); 
+    font-size: 50px;
+    text-align: center;
+}
+
+.form_label{
+    font-size: 50px;
+    padding-bottom: 10px;;
+}
+
+.form_input{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.form_select{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.form_submit{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
